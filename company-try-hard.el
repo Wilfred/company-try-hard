@@ -22,7 +22,16 @@
 
 ;;; Commentary:
 ;;
-;; TODO: usage instructions
+;; A `company-complete' alternative that tries much harder to find
+;; completions. If none of the current completions look good, call the
+;; command again to try the next backend.
+;;
+;;; Usage:
+;;
+;; You will need to bind this function globally and in the active company keymap. For example:
+;; 
+;; (global-set-key (kbd "C-z") #'company-try-hard)
+;; (define-key company-active-map (kbd "C-z") #'company-try-hard)
 
 ;;; Rationale:
 ;;
@@ -77,9 +86,6 @@ offers candidates. If called again, use the next backend, and so on."
     ;; If we haven't thrown 'break at this point, enable the user to
     ;; cycle through again.
     (setq cth--last-backend-index nil)))
-
-(global-set-key (kbd "C-z") #'company-try-hard)
-(define-key company-active-map (kbd "C-z") #'company-try-hard)
 
 (provide 'company-try-hard)
 ;;; company-try-hard.el ends here
