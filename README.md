@@ -1,1 +1,1 @@
-# company-try-harder
+# company-try-hard
