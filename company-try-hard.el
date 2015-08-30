@@ -26,7 +26,7 @@
 ;;
 ;; If any company backend returns a prefix, company will only try
 ;; other backends with the same prefix. See
-;; https://github.com/company-mode/company-mode/issues/47#issuecomment-33472005
+;; https://github.com/company-mode/company-mode/issues/142#issuecomment-46589054
 ;;
 ;; This is intended to encourage backends that are precise. However,
 ;; this isn't always appropriate (it's hard to find all completion
