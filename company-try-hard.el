@@ -3,6 +3,7 @@
 ;; Copyright (C) 2015 Wilfred Hughes
 
 ;; Author: Wilfred Hughes <me@wilfred.me.uk>
+;; Homepage: https://github.com/Wilfred/company-try-hard
 ;; Version: 0.1
 ;; Keywords: matching
 ;; Package-Requires: ((emacs "24.3") (company "0.8.0") (dash "2.0"))
