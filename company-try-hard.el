@@ -80,7 +80,7 @@ offers candidates. If called again, use the next backend, and so on."
        (when (ignore-errors (company-begin-backend it))
          ;; We've found completions here, so remember this backend and
          ;; terminate for now.
-         (message "company-try-harder: using %s" it)
+         (message "company-try-hard: using %s" it)
          (setq company-try-hard--last-index it-index)
          (throw 'break nil)))
      company-backends)
